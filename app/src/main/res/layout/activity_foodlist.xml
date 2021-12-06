@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Foodlist"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@drawable/bgr">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DANH SÁCH MÓN ĂN"
+        android:layout_marginLeft="36dp"
+        android:textColor="#000"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:text="THANH TOÁN"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="250dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="20dp" />
+
+
+
+</RelativeLayout>
